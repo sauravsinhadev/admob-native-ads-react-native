@@ -1,0 +1,75 @@
+{
+  "name": "react-native-admob-native-ads",
+  "version": "1.10.2",
+  "description": "React Native AdMob Native Ads - Full customization support for React Native 0.85+",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/module/index.js",
+      "require": "./lib/commonjs/index.js",
+      "types": "./lib/typescript/src/index.d.ts"
+    }
+  },
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
+    "!**/.*"
+  ],
+  "scripts": {
+    "build": "bob build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "example": "cd example && npx react-native run-android"
+  },
+  "keywords": [
+    "react-native",
+    "admob",
+    "native-ads",
+    "google-ads",
+    "android",
+    "ios",
+    "advertising"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/react-native-admob-native-ads.git"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-org/react-native-admob-native-ads/issues"
+  },
+  "homepage": "https://github.com/your-org/react-native-admob-native-ads#readme",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": ">=0.85.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-native": "^0.73.0",
+    "react": "^19.0.0",
+    "react-native": "^0.85.0",
+    "react-native-builder-bob": "^0.37.0",
+    "typescript": "^5.0.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      ["typescript", { "project": "tsconfig.build.json" }]
+    ]
+  }
+}

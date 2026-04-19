@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AndroidManifest.xml for react-native-admob-native-ads library.
+
+    IMPORTANT — Host app requirements:
+    ============================================================
+    1. Add your AdMob App ID in your app's AndroidManifest.xml:
+
+        <manifest>
+          <application>
+            <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy" />
+          </application>
+        </manifest>
+
+    2. Enable hardware acceleration for video ads (it is on by default):
+
+        <application android:hardwareAccelerated="true">
+            <activity android:hardwareAccelerated="true" />
+        </application>
+
+    3. Add INTERNET permission (required for ad requests):
+
+        <uses-permission android:name="android.permission.INTERNET" />
+
+    ============================================================
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rnadmobnative">
+</manifest>

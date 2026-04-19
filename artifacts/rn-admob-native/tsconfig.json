@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib/typescript",
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "jsx": "react-native",
+    "lib": ["ES2020"],
+    "noEmit": false
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "lib", "example"]
+}
